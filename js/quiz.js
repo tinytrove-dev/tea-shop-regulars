@@ -52,8 +52,9 @@ function renderResult(type) {
   app.innerHTML = `
     <p class="eyebrow">You're a regular. You are...</p>
     <h1 class="persona-name">${p.name}</h1>
+    <p class="persona-title">${p.title}</p>
     <p class="mbti">${type}</p>
-    <p class="tagline">${p.tagline}</p>
+    <p class="tagline">“${p.tagline}”</p>
     <p class="description">${p.description}</p>
     ${hasScores() ? renderBreakdown() : ""}
     <div class="matches">
